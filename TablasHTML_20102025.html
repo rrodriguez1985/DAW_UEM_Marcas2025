@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas en HTML5</title>
+</head>
+<body>
+    <h1>Tablas en HTML5</h1>
+    <div>
+        Cuando hablamos de tablas en HTML, nos estamos refiriendo a un conjunto de celdas
+        <br>donde podemos alojar distintos contenidos (imágenes, vídeos, texto, tablas,etc.)
+        <br>Así las características que presenta una tabla son las siguientes:
+        <ul>
+            <li>Definimos tabla con la etiqueta de apertura y cierre <b>table</b></li>
+            <li>La tabla va a estar dividia en filas definidas con la etiqueta <b>tr</b></li>
+            <li>Cada fila, estára dividida en celdas representadas por la etiqueta <b>td</b></li>
+            <li>Las celdas pueden contener texto, imágenes, formularios, listas,otras tablas, etc.</li>
+        </ul>
+        <table border="1px">
+            <!-- table: define una tabla -->
+            <tr>
+                <!-- tr: define la fila de la tabla -->
+                <td>Nombre</td>
+                <!-- td: define las celdas que tendrán las filas de la tabla -->
+                <td>Apellido</td>
+            </tr>
+            <tr>
+                <td>Raúl</td>
+                <td>Rodriguez</td>
+            </tr>
+        </table>
+        <h2>Elementos de una tabla</h2>
+        <div>
+            <ul>
+                <li><b>table</b>: sirve para definir una tabla.</li>
+                <li><b>caption</b>: sirve para poder colocar un título a una tabla</li>
+                <li>
+                    <b>align="top/bottom"</b>: es un atributo con el que podemos 
+                    <br> alinear en la parte superior o inferior el título de la tabla
+                </li>
+                <li><b>thead</b>: Define la cabecera de una tabla</li>
+                <li><b>th</b>Define una celda como si fuera la cabecera de una tabla</li>
+                <li><b>tbody</b>: Define el cuerpo de una tabla</li>
+                <li><b>tfoot</b>: Define el pie de la tabla</li>
+                <li><b>tr</b>: Define una fila de una tabla</li>
+                <li><b>td</b>: Define una celda de una fila</li>
+            </ul>
+            <br>Ejemplo de tabla con caption
+            <br>
+            <table border="1px">
+                <caption>Goleadores Liga Española 25-26</caption>
+                <tr>
+                    <th>Equipo</th>
+                    <th>Jugador</th>
+                    <th>Nº de Goles</th>
+                </tr>
+                <tr>
+                    <td>Real Madrid</td>
+                    <td>Mbappe</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>Atletico de Madrid</td>
+                    <td>J. Alvarez</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Levante</td>
+                    <td>Etta Eyoung</td>
+                    <td>5</td>
+                </tr>
+            </table>
+
+        </div>
+        <div>
+            <h2>Atributos específicos para tablas: combinación de tablas</h2>
+            Para poder hacer combinación de tablas, utilizaremos unas propiedades
+            <br> que son <b>rowsapn</b> y <b>colspan</b> para combinar celdas de 
+            <br>las mismas.
+            <ul>
+                <li>
+                    <b>rowspan:</b>indica el número de filas que ocupa la celda.
+                    <br> Es decir, sirve para combinar filas.
+                </li>
+                <li>
+                    <b>colspan:</b>indica el número de columnas que ocupa una celda.
+                    <br> Es decir, sirve para combinar columnas.
+                </li>
+            </ul>
+            <br>Ejemplo de Tabla combinada
+            <table border="1px">
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                    <td rowspan="3">C</td>
+                    <td>D</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">E</td>
+                    <td>F</td>
+                    <td rowspan="3">G</td>
+                </tr>
+                <tr>
+                    <td>H</td>
+                </tr>
+                <tr>
+                    <td>I</td>
+                    <td>J</td>
+                    <td>K</td>
+                </tr>
+            </table>
+        </div>
+        <br>Ejemplo clase tablas combinadas
+        <table border="1px">
+            <tr>
+                <td align="center">1</td>
+                <td colspan="3" align="center">2</td>
+                <td align="center">3</td>
+                <!-- <td>1</td>
+                <td>1</td> -->
+            </tr>
+            <tr>
+                <td rowspan="3" align="center">4</td>
+                <td align="center">5</td>
+                <td colspan="2" align="center">6</td>
+                <td rowspan="3" align="center">7</td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">8</td>
+                <td align="center">9</td>
+            </tr>
+            <tr>
+                <td align="center">11</td>
+                <td align="center">12</td>
+                <td align="center">13</td>
+
+            </tr>
+        </table>
+        <h2>Propiedades de las celdas de las tablas</h2>
+        <ul>
+            <li><b>Border:</b>Establece el ancho del borde de la tabla exterior en px</li>
+            <li><b>cellspacing:</b>especificar el espacio entre celdas</li>
+            <li><b>cellpadding:</b>especifica el espacio entre el borde de una celda y su contenido</li>
+        </ul>
+    </div>
+
+</body>
+</html>

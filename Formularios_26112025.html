@@ -88,5 +88,161 @@
         <br><textarea name="texto" id="" placeholder="Escribe aquí la opinión que tengas sobre Marcas..."></textarea>
         <br><input type="submit" value="Registar Información">
     </form>
+    <h2>Campos de Entrada de Información Numéricos</h2>
+    Para poder obtener información númerica en nuestros formularios, podemos utilizar dos tipos de campos:
+    <ul>
+        <li>input type =number:con el cuál estamos indicando que el valor de entrada será númerico </li>
+        <li>campo de entrada de rango: input type = range</li>
+    </ul>
+    <br> Los atributos que van asociados a estos son los siguientes:
+    <ul>
+        <li>min: establece un valor mínimo para la validación</li>
+        <li>max: establece un valor máximo para la validación</li>
+        <li>step: permite la variación entre números para la posterior validación</li>
+    </ul>
+    <br>Ejemplo de Campo Numérico de Rango:
+    Entrada de Rango:<input type="range" name="rango" id="" min="25" max="200" step="10">
+    <hr>
+    <h1>Campos de Entrada Numéricos:Fecha y Hora</h1>
+    Dentro de los formularios, podemos utilizar un tipo de input que nos permite establecer elementos de fecha y hora.
+    <br>Entre los distintos tipos, podemos destacar los siguientes:
+    <ul>
+        <li><b>Fecha</b>: utilizaríamos input type = date</li>
+        <li><b>Hora</b>: utilizaríamos input type = time</li>
+        <li><b>Fecha y hora Local</b>utilizaríamos input type = datetime-local/li>
+        <li><b>Mes</b>: utilizaríamos input type = month</li>
+        <li><b>Semana</b>utilizaríamos input type = week</li>
+    </ul>
+    <br>Ejemplos:
+    <br>Fecha: <input type="date" name="date" id="">
+    <br>Hora: <input type="time" name="hora" id="">
+    <br>Fecha y Hora Local: <input type="datetime-local" name="horalocal" id="">
+    <br>Mes: <input type="month" name="mes" id="">
+    <br>Semana: <input type="week" name="semana" id="">
+    <br>Ejemplo de Formulario con Fechas y Horas con máx, min y step
+    <br>Seleccione la fecha y hora deseada: <input type="date" name="" id="" min="2025-11-01" max="2026-01-01" step="2">
+    <hr>
+    <h1>Campos de Entrada de Información con Controles: Casillas y Botones</h1>
+    Hay dos tipos de campos de entrada de información de controles que son los siguientes:
+    <ul>
+        <li>Casillas de Verificación: Activan o desactivan opciones. input type = checkbox</li>
+        <li>Botones de Radio: Botones de selección única. input type = radio</li>
+    </ul>
+    <br> Ejemplo de Formulario con Checkbox y Botones Radio
+    <br> Seleccione la Titulación en la que está matriculado actualmete:
+    <form action="mailto:raul@uem.es" method="post">
+        <br><input type="radio" name="FP" id="" value="ASIR"> ASIR
+        <br><input type="radio" name="FP" id="" value="DAM"> DAM
+        <br><input type="radio" name="FP" id="" value="DAW"> DAW
+        <br>Le gustaría seguir formándose en el mundo IT?
+        <br><input type="checkbox" name="formacion" id="" value="SI" checked>SI
+        <br><input type="checkbox" name="formacion" id="" value="NO">NO
+    </form>
+    <hr>
+    <h1>Listas de Selección</h1>
+    Se utilizan cuando por ejemplo, las casillas de verificación se nos  quedan cortas o necesitamos mostrar una lista
+    <br>más extensa dedatos.
+    <br>A través de estas lista, podemos mostrar al usuario varias opciones disponibles para elegir una de ellas.
+    <br>Entre los tipos de listas podemos destacar las siguientes:
+    <ul>
+        <li>Listas Cerradas: Son listas de opciones cerradas. Se hacen con select y option</li>
+        <li>Listas Abiertas: Son listas de opciones abiertas. Se hacen con datalist</li>
+    </ul>
+    <h4>Ejemplo de Lista Cerrada: Select y Option:</h4>
+    <br>Lista de Sistemas Operativos:
+    <select name="sistemas" id="">
+        <option value="1">Windows 11</option>
+        <option value="2">Redhat Linux</option>
+        <option value="3">Ubuntu</option>
+        <option value="4">Kali Linux</option>
+        <option value="5">Linux Suse</option>
+    </select>
+    <h4>Ejemplo de Lista Abierta: Datalist</h4>
+    <br>Listado de Materias en el CFGS DAW <input list="materia">
+    <datalist id="materia">
+        <option value="Programación"></option>
+        <option value="BBDD"></option>
+        <option value="ED"></option>
+        <option value="SSII"></option>
+        <option value="LMSGE"></option>
+    </datalist>
+    <h4>Lista de Opción / Selección múltiple</h4>
+    Seleccione las materias de las que quiere matricularse:
+    <br><select name="combo" id="multiple">
+        <optgroup label="ASIR">
+            <option value="1" label="FHW"></option>
+            <option value="2" label="PAR"></option>
+            <option value="3" label="ISO"></option>
+            <option value="4" label="MARCAS"></option>
+            <option value="5" label="IAW"></option>
+        </optgroup>
+        <optgroup label="DAW">
+            <option value="6" label="PROG"></option>
+            <option value="7" label="BBDD"></option>
+            <option value="8" label="ED"></option>
+            <option value="9" label="SSII"></option>
+            <option value="10" label="CLOUD"></option>
+        </optgroup>
+    </select>
+    <hr>
+    <h1>Selección de Colores</h1>
+    Seleccionar colores: <input type="color" name="color" id="">
+    <h1>Selección de Archivos</h1>
+    Adjuntar un archivo a nuestro envío del formulario.
+    A traves del atributo accept, podemos delimitar e indicar el tipo de archivo (formato) que queremos que se adjunte.
+    Insertar tarea: <input type="file" name="" id="" accept=".pdf">
+    <hr>
+    <h1>Agrupación de Campos</h1>
+    Son etiquetas que nos permiten organizar los elementos de nuestros formularios reagrupándolos por categorías o temáticas
+    <br>entre otras cosas.
+    <ul>
+        <li>Fielset: agrupa de manera organizada los campos de entrada por temática</li>
+        <li>Legend: una leyenda para la etiqueta fieldset</li>
+        <li>Label: relaciona campo y texto de un formulario</li>
+    </ul>
+    <br> Ejemplo de Formulario
+    <form action="http://www.prueba.es" method="post">
+        <fieldset>
+            <legend>Ficha de Alumno</legend>
+            <fieldset>
+                <legend>Datos del Alumno</legend>
+                Nombre: <input type="text" name="name" id="" placeholder="introduce tu nombre completo">
+                <br>Apellidos: <input type="text" name="name" id="" placeholder="introduce tus apellidos">
+            </fieldset>
+            <fieldset>
+                <legend>Formación Académica</legend>
+                <input type="checkbox" name="" id="">Sin Estudios
+                <br><input type="checkbox" name="" id="">ESO
+                <br><input type="checkbox" name="" id="">Bachillerato
+                <br><input type="checkbox" name="" id="">CFGM
+                <br><input type="checkbox" name="" id="">CFGS
+                <br><input type="checkbox" name="" id="">Grado Universitario
+                <br><input type="checkbox" name="" id="">Master
+            </fieldset>
+            <input type="submit" value="Regitrar información">
+        </fieldset>
+    </form>
+<hr>
+<h1>Botones de Formularios</h1>
+Podemos distinguir entre 4 tipos de botones:
+<ul>
+    <li>Botón de envío: input type = submit</li>
+    <li>Botón de envío con imagen: input type = image</li>
+    <li>Botón de reseteo / borrado: input type = reset>
+    <li>Botón sin funcionalidad: input type = button o definido con la etiqueta de apertura y cierre button</li>
+</ul>
+<form action="mailto:raul@uem.es">
+    <br>Enviar: <input type="submit" value="enviar">
+</form>
+<br><form action="mailto:raul@uem.es">
+    <br>Enviar: <input type="image" src="img/rick.png" width="35px" height="35px">
+</form>
+<br><form action="mailto:raul@uem.es">
+    <br>Borrar: <input type="reset">
+</form>
+<br><form>
+    <br>Funcionalidad: 
+    <br><button onclick=alert"('Sois muy pesados con la hora de salida...')">Pincha aquí</button>
+</form>
 </body>
 </html>

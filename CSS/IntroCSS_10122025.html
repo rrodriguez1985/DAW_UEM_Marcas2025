@@ -3,6 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS Externo. Debe de vincularse una documento con extensión .css-->
+    <link rel="stylesheet" href="style1.css">
+    <!--CSS Interno: va entre las etiquetas style-->
+    <style>
+        h1{
+            color:crimson;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+        }
+        img{
+            border:2px blue dotted;
+        }
+    </style>
+
     <title>Introducción a CSS</title>
 </head>
 <body>
@@ -62,7 +76,10 @@
             <br> más dinámicas y acordes a las necesidades solicitadas por el usuario.
         </li>
     </ul>
-    <h3>Ventajas y Desventajas de CSS</h3>
+    <!--CSS Inline o Embebido: aplica directamente a la etiqueta que se quiera.
+    No ocurre como en el resto de casos que aplicaría a todas las etiquetas con ese
+    mismo nombre, sino que a esa etiqueta exclusivamente.-->
+    <h3 style="color:blueviolet; font-size: 22px; font-family:Arial; text-align: right;">Ventajas y Desventajas de CSS</h3>
     <h4>Ventajas</h4>
     <ul>
         <li>Mayor control de la presentación del sitio web</li>
@@ -83,6 +100,24 @@
             <br>sencilla que utilizando CSS.
             <br>Ahora, para poder centrar por ejemplo un div o una imagen, deberemos usar las propiedades
             <br>CSS disponibles para ello...
+        </li>
+    </ul>
+    <hr>
+    <h2>Tipos de CSS que podemos utilizar</h2>
+    En HTML, podemos utilizar los siguientes tipos de CSS para aplicar diseño y características
+    <br> a nuestras páginas web.
+    <ul>
+        <li>CSS Externo: Es aquel, que a través de un documento externo con estensión
+            <br>.css, aplica las característcas necesarias a nuestro documentos HTML
+            <br>para dotarle de apariencia y estilo.
+            <br>Se adjunta en la cabecera del documento HTML de la siguiente manera:
+            <br> link rel="stylesheet" href="style.css" todo esto en el head.
+        </li>
+        <li>CSS Interno: Se aplica dentro de las etiquetas head de nuestro HTML,
+            <br> mediante las etiquetas style de apertura y cierre </li>
+        <li>CSS Embebido o Inline: Se aplica a la etiqueta HTML correspondiente
+            <br> mediante el atributo style, seguido de las características que le queramos
+            <br> introducir a esta.
         </li>
     </ul>
 </body>

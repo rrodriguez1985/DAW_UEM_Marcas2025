@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #unico{
+            background-color: blueviolet;
+            color:white;
+            font-family: Arial;
+            font-size:16px;
+            text-align: center;
+        }
+        .daw{background-color: aquamarine;
+            color:brown;
+            text-align: right;
+            padding:10px;
+            width:400px;
+            height: 300px;
+
+        }
+    </style>
+    <title>Explicación de ID y CLASS en CSS</title>
+</head>
+<body>
+    <h1>Elementos de Selección ID y CLASS</h1>
+    Tanto en HTML como en CSS, podemos utilizar una serie de elementos que se conocen
+    <br> como elementos de selección, que nos permiten establecer características únicas
+    <br> y concretas a nuestros diseños.
+    <br>Para ello, utilizaremos los elementos <b>ID</b> y <b>CLASS</b>, que nos permitirán
+    <br>pode establecer características a nuestras etiquetas según lo necesitemos.
+    <h2>Definición de ID</h2>
+    Un ID en HTML y CSS, se define como un atributo denominado como elemento único.
+    <br>Es decir, un elemento que al ser aplicado en un documento HTML y/o CSS, no 
+    <br>puede repetirse en dicho documento.
+    <br>Para identificarlos en html, utilizaremos el id segudio del nombre que se le quiere asignar
+    <br> y en css, el # con el nombre asignado.
+    <hr>
+    <h4>Ejemplo de ID</h4>
+    <div id="unico">Esto es un div con un atributo ID en HTML</div>
+    <br>
+    <div>Esto es otro div sin aplicar un atributo ID en HTML</div>
+    <br>
+    <div id="unico" style="text-align: right;">Esto es otro div al que vuelvo aplicar un atributo ID en HTML</div>
+    <hr>
+    <h2>Definición de CLASS</h2>
+    El valor del atributo class, a diferencia del valor del atributo id, puede ser utilizado en más 
+    <br>elementos de un mismo documento aunque estos sean distintos.
+    <br>El beneficio que tiene esto, es que cuando tengamos que aplicar el mismo estilo 
+    <br> a diferentes elementos HTML de un mismo documento, nos permitirá reducir
+    <br> líneas de código en nuestros documentos .css o en nuestros css internos.
+    <br>Para identificarlos en html, utilizaremos el class seguido del nombre que se le quiere asignar
+    <br>y en css, el . con el nombre asignado.
+    <h4>Ejemplo de CLASS</h4>
+    <div class="daw">Esto es un div con un atributo class en HTML</div>
+    <br>
+    <p class="daw">Esto es un salto de párrafo con un atributo class en HTML</p>
+    <br>
+    <nav class="daw">Esto es un nav con un atributo class en HTML</nav>
+</body>
+</html>

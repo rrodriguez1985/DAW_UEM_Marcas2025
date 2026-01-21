@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "morty";
+    src: url(font/fuenteweb.otf);
+}
+body{
+    background-image: url(img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+h1{
+    text-align: center;
+    color:white;
+    font-size: 48px;
+    font-family: "morty";
+}
+h3{
+    text-align: center;
+    color:white;
+    font-size: 36px;
+    font-family: "Playwrite GB J Guides", cursive;
+    font-weight: 400;
+    font-style: italic;
+}

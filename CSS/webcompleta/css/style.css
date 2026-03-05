@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "cafe";
+    src: url(../fonts/cafe.ttf);
+}
+body{
+    margin:0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#fondo{
+    background-image: url("../img/fondo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/*Header*/
+h1{
+    font-family: "cafe";
+    font-size:40px;
+}
+.header{
+    background: #5c3d2e;
+    color:white;
+    padding:20px;
+}
+.menu a{
+    display: inline-block;
+    margin:5px;
+    padding:8px 12px;
+    background: #7a523a;
+    color:white;
+    text-decoration: none;
+}
+/*banner*/
+.banner img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+/*Cards*/
+.producto{
+    padding:40px;
+}
+.card{
+    display: inline-block;
+    width: 220px;
+    margin:10px;
+    border:1px solid #ccc;
+    padding-bottom:10px;
+}
+.card img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+/*********************CSS del Formulario***********************/
+
+/*ID (elementos únicos)*/
+#titulo{
+    margin-top:0px;
+    text-align: center;
+    color:#5c3d2e;
+    background: whitesmoke;
+    padding:15px;
+}
+#formulario{
+    width: 600px;
+    margin:20px auto;
+    background-color: rgb(245, 241, 241);
+    padding:20px;
+    border-radius: 10px;
+}
+/*CLASES DEL FORMULARIO*/
+.seccion{
+    border:2px solid #3498db;
+    background-color: #f8fbff;
+    margin-bottom: 15px;
+    padding:15px;
+    border-radius: 8px;
+}
+.seccion legend{
+    color:#3498db;
+    font-weight: bold;
+}
+.campo{
+    margin-top: 10px;
+    display: block;
+}
+.entrada{
+    width: 100%;
+    padding: 6px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+}
+/*Botones*/
+.boton{
+    padding:8px 15px;
+    border:none;
+    border-radius: 5px;
+    color:white;
+    cursor: pointer;
+    font-family: "cafe";
+    font-size: 40px;
+}
+.enviar{
+    background-color: #27ae60;
+}
+.borrar{
+    background-color: #e74c3c;
+}
+.boton:hover{
+    opacity: 0.8;
+}
+#botones{
+    text-align: center;
+    margin-top: 15px;
+}
+
+/*footer*/
+.footer{
+    background: #5c3d2e;
+    color:white;
+    padding:15px;
+}

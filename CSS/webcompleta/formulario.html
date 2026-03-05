@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cafetería DAW</title>
+</head>
+<body id="fondo">
+    <!--Header: es un div o caja, que representa los elementos principales que irán en la cabecera
+    de nuestra página web-->
+    <header class="header">
+        <h1>Café DAW</h1>
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="#">Productos</a>
+            <a href="formulario.html">Contacto</a>
+        </nav>
+    </header>
+    <!-- Insertamos el formulario de nuestra web -->
+    <h2 id="titulo">Formulario de solicitud de pedido</h2>
+    <form action="raul.rodriguez@universidadeuropea.es" method="post" id="formulario">
+        <!-- Datos personales -->
+         <fieldset class="seccion">
+            <legend>Datos Personales</legend>
+            <label class="campo">
+                Nombre <input type="text" class="entrada">
+            </label>
+            <label class="campo">
+                Email <input type="email" class="entrada">
+            </label>
+            <label class="campo">
+                Password <input type="password" class="entrada">
+            </label>
+         </fieldset>
+        <!-- Tipos de Cafe -->
+         <fieldset class="seccion">
+            <legend>Tipos de Café Disponibles</legend>
+            <label><input type="radio" name="cafe">Espresso</label>
+            <label><input type="radio" name="cafe">Latte</label>
+            <label><input type="radio" name="cafe">Capuccino</label>
+         </fieldset>
+         <!-- Otros productos -->
+         <fieldset class="seccion">
+            <legend>Bollería de la Abuela</legend>
+            <label><input type="checkbox">Tarta de Manzana</label>
+            <label><input type="checkbox">Sobaos de la Casa</label>
+            <label><input type="checkbox">Muffins de cheasecake</label>
+         </fieldset>
+         <!-- Comentarios a tener en cuenta -->
+         <fieldset class="seccion">
+            <legend>Comentarios a tener en cuenta</legend>
+            <textarea class="entrada" rows="4"></textarea>
+         </fieldset>
+         <!-- Botones -->
+          <div id="botones">
+            <button class="boton enviar" type="submit">Enviar</button>
+            <button class="boton borrar" type="reset">Borrar</button>
+          </div>
+    </form>
+
+    <footer class="footer">
+        @ 1º DAW Materia Lenguaje de Marcas y Sistemas de Gestión 2026
+    </footer>
+</body>
+</html>

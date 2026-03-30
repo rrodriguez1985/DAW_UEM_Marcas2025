@@ -1,0 +1,33 @@
+.principal{
+    height: 500px;
+    width: 800px;
+    border:5px solid #C00;
+    /*Aplico posicionamiento absoluto para poder mover el elemento donde
+    yo quiera*/
+    position: absolute;
+    /*top y left, lo que hace es mover el elemento al centro del navegador (scope),
+    pero con respecto a su esquina superior izquierda que es el punto de partida*/
+    top:50%;
+    left:50%;
+    /*Centro el elemento con respecto a su punto central, es decir, centrado de manera 
+    centrada en su totalidad*/
+    transform: translate(-50%, -50%);
+}
+img{
+    position: absolute;
+    width: 450px;
+    height:300px;
+    left:150px;
+    top:60px;
+    /*Va a estar en la capa 5.MUY IMPORTANTE: va a estar 5 capas después de 
+    todas las imágenes o elementos que vayan antes que este...*/
+    z-index: 5;
+}
+div{
+    background:url(img/1.png) left top repeat-x,
+               url(img/3.png) left top repeat-x,
+               url(img/4.png) center bottom no-repeat,
+               url(img/5.png) right bottom no-repeat,
+               url(img/6.png) left bottom no-repeat;
+    background-color: coral;
+}

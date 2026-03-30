@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Z-Index_23032026.css">
+    <title>Propiedad Z-Index</title>
+</head>
+<body>
+    <h1>Propiedad de Profundidad de Niveles (z-index)</h1>
+    La propiedad z-index, es un elemento que podemos usar en HTML y CSS, para establecer
+    <br>profundidades en nuestras páginas web, en concreto en un elemento sobre el resto.
+    <br>En concreto, esta propiedad nos va a permitir situar un elemento encima de otro,
+    <br>y suele ser utilizado principalmente sobre imágenes.
+    <br>Su funcionamiento es el siguiente:
+    <ul>
+        <li>Para poder establecer una profundidad, sólo tendremos que indicar el 
+            <br>nivel de profundidad de dicho elemento.
+        </li>
+        <li>Por ejemplo, si el nivel que le damos es mayor de 0, el elemento se 
+            <br>posicionará por encima del elemento principal (z-index=4)
+        </li>
+        <li>Por ejemplo, si el nivle que le damos es menor que 0, el elemento se
+            <br>posicionará por detrás del elemento principal (z-index=-2)
+        </li>
+        <li>Si no le damos valor, o el valor que le damos es igual a 0, el elemento
+            <br>quedará tal y como aparece por defecto en nuestra web.
+        </li>
+        <li>Importante: Tener en cuenta, que la capa o nivel 0, es la capa desde la 
+            <br>que partimos, por lo que tanto, es la que está por defecto.
+        </li>
+    </ul>
+    <br>Es muy importante indicar que los valores de z-index así como las propiedades asociadas
+    <br> a ests son las siguientes: left, top, right y bottom.
+    <br><b>NO FUNICINAN</b> con elementos que está posicionados con <b>static o posición estática.</b>
+    <br>Es decir, su pocisionamiento debe ser distinto a static, y por lo tanto pueden ser: relative,
+    <br>absolute, fixed, etc.
+    <hr>
+    <h2>Ejemplo de Z-INDEX en HTML y CSS</h2>
+    <div class="uno">
+        <img src="img/uno.jpg" alt="">
+    </div>
+    <div class="dos">
+        <img src="img/dos.jpg" alt="">
+    </div>
+    <div class="tres">
+        <img src="img/tres.jpg" alt="">
+    </div>
+    <div class="cuatro">
+        <img src="img/cuatro.jpg" alt="">
+    </div>
+    <div class="cinco">
+        <img src="img/cinco.jpg" alt="">
+    </div>
+
+</body>
+</html>
